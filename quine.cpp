@@ -10,11 +10,11 @@ int main()
 
 int main()
 {
-  auto program = %s%s%c%c;
-  std::printf(program, "R\"(", program, ')', '"');
+  auto program = R"(%s)%c;
+  std::printf(program, program, '"');
   return 0;
 }
 )";
-  std::printf(program, "R\"(", program, ')', '"');
+  std::printf(program, program, '"');
   return 0;
 }
