@@ -4,17 +4,19 @@
 
 int main()
 {
-  auto program = R"(
+  auto part1 = R"(
 // Quine
 #include <iostream>
 
 int main()
 {
-  auto program = R"(%s)%c;
-  std::printf(program, program, '"');
+  auto part1 = R"()";
+  auto part2 = R"(;
+  auto part2 = R"(;
+  std::cout << part1 << part1 << ')' << '"' << part2;
   return 0;
 }
 )";
-  std::printf(program, program, '"');
+  std::cout << part1 << part1 << ')' << '"' << part2;
   return 0;
 }
